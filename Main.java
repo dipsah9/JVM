@@ -13,7 +13,7 @@ public class Main{
             count++;
             System.out.println(m1.getName());
         }
-
+        
         System.out.println("Total number of method in Class "+ c.getName() + " is: " + count);
 
         //lets check if the class formed at jvm is formed only once or 
