@@ -82,4 +82,18 @@ These phases—Loading, Linking, and Initialization—are crucial parts of the C
 Any errors in these stages will result in runtime exceptions such as java.lang.VerifyError during verification and java.lang.LinkageError during loading, linking, or initialization.
 
 
-//How class loader works
+ClassLoader Delegation Hierarchy Principle
+
+Whenever the JVM encounters a particular class, it first checks whether the corresponding .class file is already loaded in the method area. If it is loaded, the JVM uses the existing class. 
+If not, the JVM requests the ClassLoader subsystem to load the class.
+
+Delegation Process:
+
+The ClassLoader subsystem hands over the request to the Application ClassLoader (AppClassLoader).
+The AppClassLoader delegates the request to the Extension ClassLoader (ExtClassLoader), which, in turn, delegates it to the Bootstrap ClassLoader.
+Loading Mechanism:
+
+Bootstrap ClassLoader: Searches in the bootstrap class path (typically rt.jar). If the class is found, it is loaded here. If not, it delegates the request to the ExtClassLoader.
+Extension ClassLoader: Searches in the extension class path (typically lib/ext). If found, it loads the class; otherwise, it delegates to the AppClassLoader.
+Application ClassLoader: Searches in the application class path (defined by the CLASSPATH environment variable). If found, it loads the class; if not, a runtime exception occurs 
+(e.g., NoClassDefFoundError or ClassNotFoundException).
