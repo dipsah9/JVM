@@ -17,8 +17,11 @@ JVM allocates memory to store the metadata related to the class, like the consta
 Types of Class Loaders:
 
 Bootstrap ClassLoader: Loads core Java classes (rt.jar), implemented in native languages like C/C++.
+
 Extension ClassLoader: Loads classes from the extension directory (lib/ext), implemented in Java.
+
 Application ClassLoader: Loads classes defined in the application classpath, also implemented in Java.
+
 After the class is loaded into memory, it goes through Linking and Initialization phases.
 
 2) Linking
