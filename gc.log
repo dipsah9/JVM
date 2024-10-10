@@ -1,0 +1,50 @@
+[2024-10-10T15:08:08.588+0200][60944] CardTable entry size: 512
+[2024-10-10T15:08:08.588+0200][60944] Using G1
+[2024-10-10T15:08:08.589+0200][60944] Version: 23 (release)
+[2024-10-10T15:08:08.589+0200][60944] CPUs: 8 total, 8 available
+[2024-10-10T15:08:08.589+0200][60944] Memory: 8192M
+[2024-10-10T15:08:08.589+0200][60944] Large Page Support: Disabled
+[2024-10-10T15:08:08.589+0200][60944] NUMA Support: Disabled
+[2024-10-10T15:08:08.589+0200][60944] Compressed Oops: Enabled (Zero based)
+[2024-10-10T15:08:08.589+0200][60944] Heap Region Size: 1M
+[2024-10-10T15:08:08.589+0200][60944] Heap Min Capacity: 512M
+[2024-10-10T15:08:08.589+0200][60944] Heap Initial Capacity: 512M
+[2024-10-10T15:08:08.589+0200][60944] Heap Max Capacity: 512M
+[2024-10-10T15:08:08.589+0200][60944] Pre-touch: Disabled
+[2024-10-10T15:08:08.589+0200][60944] Parallel Workers: 8
+[2024-10-10T15:08:08.589+0200][60944] Concurrent Workers: 2
+[2024-10-10T15:08:08.589+0200][60944] Concurrent Refinement Workers: 8
+[2024-10-10T15:08:08.589+0200][60944] Periodic GC: Disabled
+[2024-10-10T15:08:08.619+0200][60944] CDS archive(s) mapped at: [0x00001e0000000000-0x00001e0000d94000-0x00001e0000d94000), size 14237696, SharedBaseAddress: 0x00001e0000000000, ArchiveRelocationMode: 1.
+[2024-10-10T15:08:08.619+0200][60944] Compressed class space mapped at: 0x00001e0001000000-0x00001e0041000000, reserved size: 1073741824
+[2024-10-10T15:08:08.619+0200][60944] Narrow klass base: 0x00001e0000000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+[2024-10-10T15:08:08.653+0200][60944] GC(0) Pause Full (System.gc())
+[2024-10-10T15:08:08.653+0200][60944] GC(0) Using 6 workers of 8 for full compaction
+[2024-10-10T15:08:08.653+0200][60944] GC(0) Phase 1: Mark live objects
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 1: Mark live objects 0.507ms
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 2: Prepare compaction
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 2: Prepare compaction 0.066ms
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 3: Adjust pointers
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 3: Adjust pointers 0.340ms
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 4: Compact heap
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 4: Compact heap 0.083ms
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 5: Reset Metadata
+[2024-10-10T15:08:08.654+0200][60944] GC(0) Phase 5: Reset Metadata 0.262ms
+[2024-10-10T15:08:08.655+0200][60944] GC(0) Eden regions: 4->0(25)
+[2024-10-10T15:08:08.655+0200][60944] GC(0) Survivor regions: 0->0(0)
+[2024-10-10T15:08:08.655+0200][60944] GC(0) Old regions: 2->5
+[2024-10-10T15:08:08.655+0200][60944] GC(0) Humongous regions: 0->0
+[2024-10-10T15:08:08.655+0200][60944] GC(0) Metaspace: 172K(384K)->172K(384K) NonClass: 165K(256K)->165K(256K) Class: 6K(128K)->6K(128K)
+[2024-10-10T15:08:08.655+0200][60944] GC(0) Pause Full (System.gc()) 4M->1M(512M) 2.995ms
+[2024-10-10T15:08:08.655+0200][60944] GC(0) User=0.01s Sys=0.00s Real=0.00s
+[2024-10-10T15:08:08.656+0200][60944] Heap
+[2024-10-10T15:08:08.656+0200][60944]  garbage-first heap   total reserved 524288K, committed 524288K, used 2474K [0x00000007e0000000, 0x0000000800000000)
+[2024-10-10T15:08:08.656+0200][60944]   region size 1024K, 2 young (2048K), 0 survivors (0K)
+[2024-10-10T15:08:08.656+0200][60944]  Metaspace       used 174K, committed 384K, reserved 1114112K
+[2024-10-10T15:08:08.656+0200][60944]   class space    used 7K, committed 128K, reserved 1048576K
+
+
+//Insights from the Log
+//Performance: The logs show how G1 GC behaves under the load created by the application. 
+//The pause times are relatively short (around 2.936 ms), indicating good performance for a garbage collection event.
+//Heap Management: The log indicates how G1 GC managed the heap, marking live objects and compacting the heap to free up space effectively.

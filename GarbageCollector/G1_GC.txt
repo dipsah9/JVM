@@ -1,0 +1,12 @@
+G1 Garbage Collector:
+    It is designed for applications that requires prdictable pause times. 
+    It divides the heap into multiple regions and performs garbage collection in a way that mimized pause times while maximizing throughput. 
+
+    Key Characterstics: 
+        - The heap is splitted into two region (both young and old generation).
+        - It can mark live objects while the application is running. 
+        - Moves lives object into new regions, allowing entire regions to be freeed. 
+
+NOTE: To enable it, typically we don’t need to set anything special, as it is default collector in java 0 and later.
+        However we can customize it using JVM Flags. 
+
