@@ -1,0 +1,24 @@
+Object Creation:
+    The Balloon objects are created with automatic cleanup using the Cleaner class. 
+
+Cleaner Class:
+    The cleaner automatically cleans when the object becomes unreachable(eligible for Garbage collection).
+
+Garbage Collection Suggestion: 
+    We suggest Garbage colleciton with System.gc(), but It’s not guaranteed to run immediately.
+
+Automatic Cleanup: 
+    The Cleaner.register() method register a cleanup task (defined in the BalloonCleanup class), which will run 
+    when the object in garbage collected. 
+
+
+Summary: 
+
+    Objects in Java are automatically removed from memory when they become unreachable.
+The Garbage Collector (GC) silently manages memory by cleaning up these unused objects.
+We now use Cleaner for safe and automatic resource cleanup:
+Cleaner registers a cleanup task, which runs when an object is no longer referenced.
+We can also implement AutoCloseable to trigger cleanup manually with the close() method.
+
+This approach ensures efficient and safe memory and resource management, keeping your Java applications running smoothly.
+
