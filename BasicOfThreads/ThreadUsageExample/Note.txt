@@ -1,0 +1,33 @@
+
+USING THREADS WHILE DOWNLOADING MULTIPLE FILES SIMULTANEOULSY
+
+Lets learn how to use Thread to performs tasks concurrently such as downlaoding files. Each file 
+download is handled by a seperate Thread, which runs independently from the others, simulating a download 
+process using Thread.sleep() to represent time taken. 
+
+Usage: Suitable for download multiple files and performing operations like I/O simultaneously.
+
+Key Points:
+=> Thread are created by extending Thread class.
+=> Each Thread simulatees downloading a file and exectution concurrently.
+=> start() begins the Thread exectution while sleep() simulates the delay.
+
+
+PARALLEL ARRAY SUM USING THREADS 
+
+Lets know how to use Thread for parallel computation. The task of summing an Array is split into two threads, 
+each calculation the sum for half of an Array. After both Thread finish the results are combined. 
+
+Key Points: 
+=> It is used to divide large computation into smaller parts. 
+=> join() is used to wait for the Thread to finish before combining the results. 
+=> improves performance in tasks that can be parallelized. 
+
+USAGE:
+CPU intensive task can be broken into smaller independent sub task like handling large datasets or computation.
+
+
+
+
+
+
