@@ -1,0 +1,21 @@
+First lets get what a Thread is in a playful way. 
+
+Suppose we own a restaurant(our computer) and there a head chef (our program). If head chef has to do everything 
+on his own then it will take time and is not efficient. So we can hire some asssistant chef instead, who will help 
+our head chef in assisting activities like chopping veggies, so at the same time our head can focus on other works
+and provides quality and quickly serving to our customer. 
+
+Same thread is like chef asssistant in the kitchen helping the Chef to run the system and all the activities 
+simultaneously. 
+
+There are two ways to create threads in java. 
+    a)By extending thread Class
+        => We can create a class exending Thread and override its run method which contains the code the Thread
+            will execute.
+
+    b)By implementing the Runnable Interface
+        => It allows us to seperate the task from the thread exectution, giving more flexibility when working with
+           thread pools and other concurrency frameworks. 
+
+
+
