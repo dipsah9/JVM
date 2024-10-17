@@ -17,5 +17,48 @@ There are two ways to create threads in java.
         => It allows us to seperate the task from the thread exectution, giving more flexibility when working with
            thread pools and other concurrency frameworks. 
 
+THREAD LIFECYCLE
+    A thread goes through various states during its lifecycle. 
+        NEW: When a thread is created.
+        RUNNABLE: When the thread is ready to run. 
+        BLOCKED: When a thread is waiting for a monitor lock. 
+        WAITING: When a thread is waiting indefinetly for another thread to perform a particular task. 
+        TIME PERIOD: When a thread is waiting for another thread for a specific time. 
+        TERMINATE: When a thread has completed its execution. 
 
+THREAD SCHEDULING: 
+    A JVM perfoms scheduling of threads based on different factors like priority order and scheduling's 
+    algorithms. Each thread has its priority (for Example: Thread.MIN_PRIORITY and Thread.MAX_PRIORITY) that helps
+    the scheduler to detemine the execution order. And there is also another algorithm like ROBIN
+    (still to be figure out)
+
+SYNCHNORISATION:
+    When there a multiple threads runnign, so to avoid interference we use synchnorisation. To achieve this we have following 
+    two ways: 
+        a) synchnorised methods : We can just synchnorised keywords while defining methods. 
+        b) synchnorised Blocks: We can achieve more fine grained control over synchnorisation.
+
+Inter-Thread communication: 
+    wait() : makes the current thread to wait until another invokes notify() or notifyAll().
+    notify() : makes up a single Thread that is waiting on the object monitor.
+    notifyAll(): makes up a all Thread that is waiting on the object monitor.
+
+THREAD POOLING: 
+    We don’t need to create new thread all the time. We have thread pools, we can get the thread from there. 
+    To achieve this we have Executers frameworks which provides various pool implementation.
+
+FORK/JOIN Framework: 
+    These are designed for parallelism, allowing for efficient exectution of task that can be broken into sub
+    smaller tasks. 
+
+BEST PRACTICES WHILE WORKING WITH THREADS: 
+    -> Prefer using Runnable/Callable instead extending Thread class. 
+    -> Use synchnorisation wisely to avoid bottlenecks. 
+    -> Avoid using Thread.stop(), which can leave shared data in an inconsitent state. 
+    -> Consider using high level concurrency utilities from java.util.concurrent package. 
+
+COMMON ISSUES WHILE WORKING WITH THREADS: 
+    -> DEADLOCK: A condition where two threads are blocked on forever, each waiting on each other. 
+    -> RACE CONDITION: When two or more threads tries to access shared data , it leads to unexpected results. 
+    -> STARVATION: A situation where a thread is  perpetually denied access to data. 
 
