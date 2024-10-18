@@ -62,3 +62,4 @@ COMMON ISSUES WHILE WORKING WITH THREADS:
     -> RACE CONDITION: When two or more threads tries to access shared data , it leads to unexpected results. 
     -> STARVATION: A situation where a thread is  perpetually denied access to data. 
 
+
