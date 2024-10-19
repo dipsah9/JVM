@@ -1,0 +1,16 @@
+# Java Collection Framework
+
+## 1. The Magical Containers
+
+### Lists
+- **Description**: Like a grocery bag where the order of items matters.
+- **Allows duplicates**: Yes
+- **Common Implementations**:
+  - **ArrayList**: Fast access to items by index; good for frequent reads.
+  - **LinkedList**: Efficient for adding/removing items; good for frequent modifications.
+
+**Example**:
+```java
+List<String> groceryList = new ArrayList<>();
+groceryList.add("Apples");
+groceryList.add("Bananas");
