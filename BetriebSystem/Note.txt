@@ -1,0 +1,2 @@
+Simple C programm to take input from command line arguements and give the alternating sum of the given array.
+If the array is of characters (a bis z). It will throw error.
