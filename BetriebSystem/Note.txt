@@ -1,2 +1,16 @@
+hello:
+Here we used getpwnam() functions to retrieve the password file entry for the logged in users from the system 
+database. 
+struct passwd contains the following contents: 
+char *pw_uid   : gives the user id 
+char *pw_passwd: give the password
+char * pw_gid  : uses for the group id 
+char * pw_gecos: used for the user Description
+char * pw_dir  : return the home directory 
+char * pw_shell: User's default shell
+
+
+
+Quersumme:
 Simple C programm to take input from command line arguements and give the alternating sum of the given array.
 If the array is of characters (a bis z). It will throw error.
