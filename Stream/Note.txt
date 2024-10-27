@@ -1,0 +1,21 @@
+Lets learn about Stream in java 
+The stream is like magical river flowing with data such as number and list of strings. We can use this stream to gather and process data.
+
+Stream is a way to process a sequence of elements  like list of numbers and names one by one just like water.
+
+We use the Streams to make our tasks more easier due to the following reasons: 
+
+1)  Easy to use: It let us write less code and do more things. 
+2)  Powerful: We can filter, map and sort data so quickly.
+3)  Readable: Our codes looks cleaner and easier to understand. 
+
+Following are the basic operations that we can do on streams: 
+1)filter: We can filter the list on the basis of certain types. 
+    for example: Say our list is List <String> name = Arrays.asList("Deep", "Ajith", "Jibson");
+    we can convert this list into stream using following command:
+        Stream<String>nameListasStream = name.stream();
+        Say we want to filter the namea according to the first letter of th name:
+         we can use the following syntax: 
+            nameListasStream.stream()
+                .filter(name -> name.startsWith("A"));
+                .forEach(System.out::println);
