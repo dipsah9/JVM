@@ -1,0 +1,52 @@
+What is a Data Structure?
+Data structures are organized ways to store, manage, and retrieve data efficiently. We start with primitive
+data types like int, float, char, and String in languages like C and Java, which are ideal for simple tasks
+ with limited data.
+
+However, when we need to organize and manage large amounts of related data, these primitives aren’t enough.
+That’s where data structures come in: they allow us to combine multiple variables into a structured format,
+like an array, list, or custom structure, to support more complex operations.
+
+For example, in C, a struct (structure) lets us group different types:
+struct Example {
+    char *name;
+    int roll_no;
+    int matrikel_no;
+};
+Here, we combined three elements (name, roll_no, and matrikel_no) into a single structure to manage student data efficiently. 
+These custom, organized collections are known as data structures or abstract data types (ADTs), as they enable flexible and efficient
+data manipulation beyond basic types.
+
+Data and Memory Access
+Most of the data in our devices is stored on permanent storage, such as the hard disk or SSD. However, accessing data from these storage types can be slower than accessing data in main memory (RAM), so frequently used data is often loaded into RAM to reduce access time.
+
+Introduction to Time Complexity
+The efficiency of an algorithm is measured by its time complexity, which expresses the time taken for an algorithm to run as a function of the input size.
+
+Operations That Take O(1) Time:
+Some basic operations are considered O(1), meaning they take constant time regardless of the input size. Examples include:
+
+    -Initialization
+    -Basic arithmetic operations
+    -Logical operations
+    -Comparisons
+    
+These operations don’t depend on the size of the input and complete in the same amount of time, regardless of the data being processed.
+
+When data size increases, however, the time complexity of an algorithm often increases. For example, sorting a list of 10 elements will take less time than sorting 1,000 elements.
+
+Analyzing Time Complexity of an Algorithm
+When analyzing an algorithm's time complexity, we often consider three cases:
+
+Worst Case:
+
+Represents the scenario where the algorithm takes the maximum time to complete.
+This case assumes the input is organized in the most challenging way, making it the most pessimistic scenario for time complexity.
+Average Case:
+
+Represents the time complexity when inputs are random or typical.
+This case calculates the expected performance based on a range of inputs, offering a more realistic picture of the algorithm's efficiency.
+Best Case:
+
+Represents the scenario where the algorithm has the least amount of work to do, making it the most optimistic case.
+For example, if an algorithm finds the target element immediately or doesn’t need to process the entire input, it achieves the best-case time complexity.
