@@ -1,0 +1,29 @@
+Lets learn the java Collection Framework in a playful way. 
+
+Collection as a Box of Toy: 
+
+Just imagine we have a box of toy. 
+    -List: Here we put our collection of toys and here we can keep the same toy twice. (example, we have alredy a 
+    teddybear, we can add another teddybear , that should not be  a problem)
+
+    -Set: Here we can put each unique toy, here duplicates are not allowed. so if have teddy bear already in the box, 
+    then the other teddybear is not allowed. And the good things is we know where our toy is located. 
+
+    -Map:  Here we can organize our toy according to their name.  For example, teddy bear is labelled with the key 
+    teddy, here also we can not have the duplicates.
+
+    -Queue: Here oour toys are standing in the line, and the toy which goes in last, will come last, its works on the principle 
+    first in first out. (FIFO)
+
+    Collective Interfce: 
+
+    -LIST: 
+        ArrayList
+        LinkedList
+        Vector
+        Stack
+    -Set    
+        Hashset
+        Linkedhashset 
+        TreeSet 
+        EnumSet
