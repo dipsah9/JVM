@@ -1,0 +1,22 @@
+Lets learn about network in java. 
+
+1) Introduction to sockets: 
+    What are sockets?
+        -Core components in network programming
+        -provide a network, allowing the data to communicate over a newtwork, allowing the data to be sent or received.
+        -
+
+In, java there are two classes to control the server. 
+    -sockets
+    -serverSocket
+
+Key Concepts:
+    Client-Server model: 
+        Client send a request to the server, server process the request and send a response back. 
+    
+    Ports and IP-Address: 
+        Client connects to Server using IP Address and Ports. Each service running on a server listens to the request
+        through its own ports. 
+
+Lets create a echo server that listens for connection and echo back any request received from the clients. 
+lets create a class EcohServer.java

@@ -1,0 +1,9 @@
+Lets learn about Memory Management in java in a playful way.
+
+Analogy: Lets imagine a library(Heap) where we can store many books(objects) and a desk(stacks) where we keep 
+our active reading book list(method calls)
+
+Explanation of class (MemoryDemo.java)
+1) When greet() is called, it get pushed on to the stack. 
+2) The object is created on the heap. When the method exists , object got out of the scope, but it remains on the hip until the garbage
+ collectors runs.
